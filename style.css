@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Merriweather;
+}
+
+h1, h2 {
+    font-family: Amatic SC;
+    font-weight: 700;
+    color: rgb(75, 32, 7);
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: -2.25vmin;
+    font-size: 4vw;
+}
+
+h2 {
+    margin-top: -2.25vmin;
+    margin-bottom: 0;
+    font-size: 3vw;
+    text-align: center;
+}
+
+body {
+    background-image: url("images/cherryblossomblue.jpg");
+    margin: 0;
+    padding: 0;
+    color: rgb(75, 32, 7);
+    font-size: 2.25vmin;
+}
+
+#img img{
+    width: 350px;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width:100vw;
+}
+
+.bground {
+    background-color: rgba(255, 232, 248, 0.5);
+    border-radius: 25px;
+    padding: 3vh 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 8px 25px 10px rgba(133, 112, 124, 0.5);
+    width: 60%;
+    height: 90%;
+    max-width: 60%;
+    max-height: 90%;
+}
+
+.btn-grid {
+    display:grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: hsl(312, 100%, 96%);
+    border: 1px solid hsl(313, 100%, 85%);
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 2.75vmin;
+    color:rgb(75, 32, 7);
+    outline: none;
+    transition: background-color 200ms ease-in-out;
+}
+
+.btn:hover {
+    background-color: hsl(313, 100%, 85%);
+    cursor: pointer;
+}
+
+@media(max-width: 500px) {
+    .bground {
+        padding: 2vh 3vh;
+        width: 90%;
+        height: 90%;
+        max-width: 90%;
+        max-height: 90%;
+    }
+    
+    #img img{
+        width: 50vw;
+        height: auto;
+    }
+
+    h1, h2 {
+        margin: 0;
+    }
+
+    body {
+        font-size: 3.5vmin;
+    }
+
+    h1 {
+        margin-bottom: -5vmin;
+        font-size: 15vw;
+    }
+    
+    h2 {
+        margin-top: -5vmin;
+        margin-bottom: 0;
+        font-size: 10vw;
+    }
+
+    .btn {
+        font-size: 4.25vmin;
+        }
+}
